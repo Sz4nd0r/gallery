@@ -1,0 +1,3 @@
+--Customize-- checkboxes | Progress bar
+--style the registration message--
+--disable next/back buttons when is not posible to go next/back-- 

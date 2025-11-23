@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button type="button" id="goto-form__btn">Sign Up</button></li>
+                <li><button type="button" id="goto-gallery__btn">Back to gallery</button></li>
+            </ul>
+        </nav>
+        <h1>The beautiful gallery</h1>
+    </header>
+    <div class="signup__container" id="container-signup">
+
+        <h2>New profile</h2>
+        <form id="signup-form" autocomplete="on" method="" action="">
+            <fieldset id="personal-info">
+                <legend>Personal Information</legend>
+                <label>
+                    Name: <input type="text" name="name" id="name" required placeholder="EX: John Doe">
+                </label>
+                <label>
+                    Username: <input type="text" name="username" id="username" required placeholder="EX: jd0123">
+                </label>
+                <label>
+                    Email: <input type="email" name="email" id="email" required placeholder="EX: doe@example.email">
+                </label>
+            </fieldset>
+
+            <fieldset id="interests">
+                <legend>Interests</legend>
+            </fieldset>
+
+            <fieldset id="security">
+                <legend>Security</legend>
+                <label>
+                    Password: <input type="password" name="password" id="password" required pattern="[A-Za-z0-9]{8,}"
+                        title="At least 8 characters" placeholder="At least 8 characters">
+                </label>
+                <label>
+                    Confirm Password: <input type="password" name="confirm-password" id="confirm-password" required
+                        placeholder="Re-enter your password">
+                </label>
+            </fieldset>
+
+            <fieldset id="Preferences">
+                <legend>Preferences</legend>
+                <label>
+                    <input type="checkbox" name="updates" id="updates" checked>
+                    I want to receive news and updates.
+                </label>
+                <label>
+                    <input type="checkbox" name="offers" id="offers">
+                    I want to receive special offers.
+                </label>
+            </fieldset>
+            <div id="form__completed-message">
+                <p>Thank you for your registration</p>
+            </div>
+            <div class="buttons__form">
+                <button type="button" class="button" id="back">Back</button>
+                <progress id="file-progress" value="0" max="100">0%</progress>
+                <button type="submit" class="button" id="submit">Create account</button>
+                <button type="button" class="button" id="next">Next</button>
+            </div>
+        </form>
+    </div>
+    <div class="im__container2" id="gallery">
+        <div class="img__container" id="container-img" role="list">
+        </div>
+    </div>
+    <script src="./script/images.js"></script>
+    <div class="colors__section">
+        <h2>PRIMARY COLORS</h2>
+        <div class="primary__colors colors__container">
+            <div class="color__element dark" style="background-color: rgba(255,0,0,0.7);">RED</div>
+            <div class="color__element light" style="background-color: rgba(0,255,0,0.7);">GREEN</div>
+            <div class="color__element dark" style="background-color: rgba(0,0,255,0.7);">BLUE</div>
+        </div>
+        <h2>SECONDARY COLORS</h2>
+        <div class="secondary__colors colors__container">
+            <div class="color__element light" style="background-color: rgba(255,255,0,0.7);">YELLOW</div>
+            <div class="color__element light" style="background-color: rgba(0,255,255,0.7);">CYAN</div>
+            <div class="color__element dark" style="background-color: rgba(255,0,255,0.7);">MAGENTA</div>
+        </div>
+        <h2>TERTIARY COLORS</h2>
+        <div class="tertiary__colors colors__container">
+            <div class="color__element dark" style="background-color: rgba(255,127,0,0.7);">ORANGE</div>
+            <div class="color__element light" style="background-color: rgba(0,255,127,0.7);">SPRING GREEN</div>
+            <div class="color__element dark" style="background-color: rgba(127,0,255,0.7);">VIOLET</div>
+            <div class="color__element light" style="background-color: rgba(127,255,0,0.7);">CHARBREUSE GREEN</div>
+            <div class="color__element dark" style="background-color: rgba(0,127,255,0.7);">AZURE</div>
+            <div class="color__element dark" style="background-color: rgba(255,0,127,0.7);">ROSE</div>
+        </div>
+
+    </div>
+    <footer>
+        <p>© 2024 Beautiful Gallery Inca. All rights in the right side.</p>
+        <p>Szortofgood</p>
+    </footer>
+    <script src="./script/form.js"></script>
+</body>
+
+
+</html>

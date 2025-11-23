@@ -1,0 +1,144 @@
+::selection {
+    background-color: #3f5352;
+    color: #f0d986;
+}
+
+:root {
+    --base-sun-color: #f5d566;
+    --intermediate-sun-color: #f0d986;
+    --sunny-gradient: linear-gradient(45deg, #fdf4d9, #faeab3, #f8df8c);
+    --palid-sun: #FDF7E2;
+    --base-bluegreen: #3f5352;
+    --clear-bluegreen: #5e7b7a;
+    --sunny-gradient-to-clear-bluegreen: linear-gradient(to bottom, #fdf4d9, #faeab3, #f8df8c, #5e7b7a);
+}
+
+.signup__container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin-inline: 35px;
+}
+
+button[type="submit"],
+button[type="button"] {
+    appearance: none;
+    margin: 10px 1px 0 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: var(--base-bluegreen);
+    background: var(--palid-sun);
+    border: 1px solid #3f535277;
+    border-radius: 5px;
+}
+
+:is(li button, button[type="submit"], button[type="button"]):hover {
+    background: var(--sunny-gradient);
+    cursor: pointer;
+    box-shadow: 0 0 8px 2px #3f535277;
+}
+
+nav ul li:nth-child(2) button {
+    display: none;
+}
+
+.signup__container {
+    font-size: 0.7rem;
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    min-width: 300px;
+    max-width: 600px;
+    background: var(--palid-sun);
+    border: 2px solid var(--base-bluegreen);
+    border-radius: 10px;
+    box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset,
+#form__completed-message {
+    gap: 10px 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    height: 250px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 5px;
+    color: var(--base-bluegreen);
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    font-size: 0.7rem;
+    border: 1px solid #3f535277;
+    border-radius: 5px;
+    color: var(--base-bluegreen);
+    padding: 3px 5px;
+    margin-bottom: 10px;
+}
+
+:is(input[type="text"], input[type="email"], input[type="password"])::placeholder {
+    color: #3f5352cd;
+}
+
+fieldset:has(label input[type="checkbox"]) {
+    justify-content: space-around;
+}
+
+input[type="checkbox"][class="interest"] {
+    appearance: none;
+    border: 1px solid #3f535277;
+    margin: 10px 5px;
+    display: inline-block;
+    background: transparent;
+    color: var(--dark-color);
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"][class="interest"]:hover {
+    box-shadow: 0 0 4px 1px var(--base-sun-color);
+    transform: scale(1.1);
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 6px 2px var(--base-sun-color);
+}
+
+#interests,
+#security,
+#Preferences,
+button[type="submit"],
+#form__completed-message {
+    display: none;
+}
+
+#form__completed-message {
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons__form {
+    display: flex;
+    justify-content: space-between;
+}
