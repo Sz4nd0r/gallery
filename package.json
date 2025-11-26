@@ -1,0 +1,28 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "description": "practicing backend",
+  "homepage": "https://github.com/Sz4nd0r/gallery#readme",
+  "bugs": {
+    "url": "https://github.com/Sz4nd0r/gallery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sz4nd0r/gallery.git"
+  },
+  "license": "ISC",
+  "author": "szortofgood",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node back/src/index.js",
+    "dev": "nodemon back/src/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^9.0.0",
+    "nodemon": "^3.1.11"
+  }
+}
